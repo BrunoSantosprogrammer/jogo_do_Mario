@@ -5,24 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/title_mario.png" type="image/x-icon">
+
     <title>Super Mario</title>
+
+    <!-- main styles file -->
+    <link rel="stylesheet" href="styles/main.scss">
 </head>
 
 <body>
-    <main class="cenario">
-        <img src="/images/clouds_mario.png" alt="clouds Mario" class="img-nuvens">
-        <img src="/images/Gift_mario.gif" alt="Mario" class="img-mario" id="img-mario">
-        <img src="/images/bullet_mario.png" alt="bullet Mario" class="img-bala" id="img-bala">
-        <img src="/images/pipe_mario.png" alt="pipe Mario" class="img-tubo" id="img-tubo">
-        <img src="/images/stars_mario.png" alt="stars Mario" class="img-stars" id="img-stars">
-        <img src="/images/stars_mario.png" alt="stars Mario" class="img-stars" id="img-stars">
-        <img src="/images/stars_mario.png" alt="stars Mario" class="img-stars" id="img-stars">
-        <img src="/images/moeda_mario.png" alt="Moedas Mario" class="img-moeda" id="img-moeda">
-        <img src="/images/moeda_mario.png" alt="Moedas Mario" class="img-moeda" id="img-moeda">
-        <img src="/images/moeda_mario.png" alt="Moedas Mario" class="img-moeda" id="img-moeda">
-        <img src="/images/moeda_mario.png" alt="Moedas Mario" class="img-moeda" id="img-moeda">
-    </main>
+    <!-- scenario section -->
+    <main class="scenario">
 
+        <!-- Game Score -->
+        <header class="gameScore">
+            <div class="gameScore__container">
+                <div class="gameScore__container__results">
+                    <span class="gameScore__container__results__title" id="player">Jogador</span>
+                    <span class="gameScore__container__results__name" id="player-name">Nome Jogador</span>
+                </div>
+                    <img class="gameScore__container__logo" src="./images/logo_mario_bros.png" alt="Logo Mario">
+                <div class="gameScore__container__columns">
+                    <div class="gameScore__container__results">
+                        <span class="gameScore__container__results__title">Moedas</span>
+                        <span class="gameScore__container__results__number1" id="coins">00</span>
+                    </div>
+                    <div class="gameScore__container__results">
+                        <span class="gameScore__container__results__title">Estrelas</span>
+                        <span class="gameScore__container__results__number2" id="stars">00</span>
+                    </div>
+                    <div class="gameScore__container__results">
+                        <span class="gameScore__container__results__title">Tempo</span>
+                        <span class="gameScore__container__results__number3" id="time">00</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- project images -->
+        <img src="./images/clouds_mario.png" alt="clouds Mario" class="scenario__clouds">
+        <img src="./images/clouds_mario.png" alt="clouds Mario" class="scenario__clouds scenario__clouds2">
+        <img src="./images/Gift_mario.gif" alt="Mario" class="scenario__mario" id="img-mario">
+        <img src="./images/bullet_mario.png" alt="bullet Mario" class="scenario__bullet" id="img-bullet">
+        <img src="./images/pipe_mario.png" alt="pipe Mario" class="scenario__pipe" id="img-pipe">
+        <img src="./images/stars_mario.png" alt="stars Mario" class="scenario__stars" id="img-stars">
+        <img src="./images/stars_mario.png" alt="stars Mario" class="scenario__stars scenario__stars2" id="img-stars">
+        <img src="./images/stars_mario.png" alt="stars Mario" class="scenario__stars scenario__stars3" id="img-stars">
+        <img src="./images/moeda_mario.png" alt="Coins Mario" class="scenario__coins" id="img-coins">
+        <img src="./images/moeda_mario.png" alt="Coins Mario" class="scenario__coins scenario__coins2" id="img-coins">
+        <img src="./images/moeda_mario.png" alt="Coins Mario" class="scenario__coins scenario__coins3" id="img-coins">
+        <img src="./images/moeda_mario.png" alt="Coins Mario" class="scenario__coins scenario__coins4" id="img-coins">
+    </main>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

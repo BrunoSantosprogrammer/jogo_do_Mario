@@ -1,3 +1,136 @@
-body {
-    background-color: red;
+@use "variables";
+@use "animations";
+
+// fonts project
+@font-face {
+    font-family:'mario' ;
+    src: url(/fonts/SuperMario256.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'mario';
+}
+
+.scenario {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(variables.$blue, variables.$white);
+    border-bottom: 16px solid variables.$green;
+
+    &__mario {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+    }
+
+    &__clouds {
+        position: absolute;
+        top: 200px;
+        height: 200px;
+    }
+
+    &__clouds2 {
+        position: absolute;
+        top: 300px;
+        left: 700px;
+    }
+
+    &__pipe {
+        position: absolute;
+        height: 80px;
+        bottom: 0;
+        left: 200px;
+    }
+
+    &__bullet {
+        position: absolute;
+        height: 40px;
+        bottom: 80px;
+        left: 200px;
+    }
+
+    &__coins{
+        position: absolute;
+        height: 40px;
+        bottom: 170px;
+        left: 220px;
+    }
+
+    &__stars {
+        position: absolute;
+        height: 40px;
+        top: 200px;
+        left: 300px;
+    }
+}
+
+.gameScore {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    &__container {
+        max-width: 750px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: variables.$white;
+        border: 4px solid variables.$blue;
+        box-shadow: 3px 3px  variables.$yellow, 1px 0 0.4rem variables.$yellow;
+        font-size: 30px;
+
+        &__results {
+            display: block;
+            text-align: center;
+
+            &__title {
+                display: block;
+                font-size: 18px;
+                font-weight: bold;
+                color: variables.$blue;
+                padding-bottom: 8px;
+            }
+
+            &__name {
+                color: variables.$green;
+                font-size: 24px;
+            }
+
+            &__number1 {
+                color: variables.$yellow;
+            }
+
+            &__number2 {
+                color: variables.$red;
+            }
+
+            &__number3 {
+                color: variables.$green;
+            }
+        }
+
+        &__columns {
+            display: flex;
+            gap: 10px;
+        }
+
+        &__logo {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -40px;
+            margin: 0 auto;
+            height: 120px;
+            margin-top: 12px;
+        }
+    }
 }
